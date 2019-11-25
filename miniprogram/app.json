@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/bases/bases",
+    "pages/cloud/cloud"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#424242",
+    "navigationBarTitleText": "彩云小译",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#f00",
+    "list": [{
+      "pagePath": "pages/bases/bases",
+      "text": "翻译",
+      "iconPath": "images/film.png",
+      "selectedIconPath": "images/film-actived.png"
+    },
+    {
+      "pagePath": "pages/cloud/cloud",
+      "text": "我的",
+      "iconPath": "images/profile.png",
+      "selectedIconPath": "images/profile-actived.png"
+    }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

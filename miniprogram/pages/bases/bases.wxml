@@ -1,0 +1,23 @@
+<!-- 基本元素、数据绑定 -->
+<view>{{msg}}</view>
+<image src="{{img}}" class="banner"></image>
+<!-- 循环渲染 -->
+<view wx:for="{{arr}}" wx:key="index">
+  {{index}} {{item}}
+</view>
+<view wx:for="{{list}}" wx:key="index">
+  {{item.name}} {{item.age}} {{item.gender}}
+</view>
+<!-- 条件渲染 -->
+<view wx:if="{{isLogin}}">Chris Chen</view>
+<view wx:else>请登录</view>
+<!-- 客观存在，隐藏样式：适用于元素显隐频繁切换的场景 -->
+<view hidden="{{!isLogin}}">hidden</view>
+
+<!-- 事件冒泡bindtap/阻止事件冒泡catchtap -->
+<view class="box" catchtap="onBoxHandler" data-id="1234">
+  <view class="child" catchtap="onChildHandler"></view>
+</view>
+
+<button size="mini" bindtap="onTapHandler">点我加1</button>
+<view>{{count}}</view>
